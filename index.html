@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#e8ddc9" />
+    <meta name="description" content="A wedding celebration for Amara and Julian." />
+    <title>Amara & Julian — A Wedding Celebration</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main inert>
+      <section class="hero" id="home" aria-label="Wedding invitation" tabindex="-1">
+        <video class="hero-video" id="weddingVideo" muted loop playsinline preload="none" aria-hidden="true">
+          <source src="/public/videos/wedding-background.mp4" type="video/mp4" />
+        </video>
+        <div class="hero-wash"></div>
+        <div class="hero-copy">
+          <p class="eyebrow light" data-detail="eyebrow"></p>
+          <h1><span data-detail="nameOne"></span><i>&</i><span data-detail="nameTwo"></span></h1>
+          <div class="hero-rule"><span></span> ✦ <span></span></div>
+          <p class="hero-date" data-detail="dateLong"></p>
+          <p class="hero-venue" data-detail="venue"></p>
+          <a class="text-link" href="#celebration">Discover the celebration <span>↓</span></a>
+        </div>
+        <div class="hero-caption"><span data-detail="city"></span><span>Scroll to explore</span></div>
+      </section>
+
+      <section class="invitation botanical-section" id="celebration">
+        <div class="vine vine-left" aria-hidden="true"></div><div class="vine vine-right" aria-hidden="true"></div>
+        <div class="section-inner invitation-inner">
+          <p class="eyebrow">With all our love</p>
+          <h2>Two hearts,<br /><em>one beautiful beginning.</em></h2>
+          <div class="flourish" aria-hidden="true">❧ <span>✦</span> ❧</div>
+          <p class="invitation-message" data-detail="message"></p>
+          <p class="invitation-names"><span data-detail="nameOne"></span> <i>&</i> <span data-detail="nameTwo"></span></p>
+          <p class="invitation-date" data-detail="dateLong"></p>
+          <p class="invitation-time" data-detail="time"></p>
+        </div>
+      </section>
+
+      <section class="details botanical-section" id="details">
+        <div class="vine vine-left" aria-hidden="true"></div><div class="vine vine-right" aria-hidden="true"></div>
+        <div class="section-inner">
+          <p class="eyebrow">A day to remember</p><h2>The celebration</h2>
+          <div class="detail-grid">
+            <article class="detail-card"><span class="detail-icon">✧</span><p class="eyebrow">The ceremony</p><h3 data-detail="ceremonyTime"></h3><p data-detail="ceremonyVenue"></p><p class="muted" data-detail="ceremonyAddress"></p></article>
+            <div class="detail-divider" aria-hidden="true">✦</div>
+            <article class="detail-card"><span class="detail-icon">✧</span><p class="eyebrow">Dinner & dancing</p><h3 data-detail="receptionTime"></h3><p data-detail="receptionVenue"></p><p class="muted" data-detail="receptionAddress"></p></article>
+          </div>
+          <a class="outline-link" data-map-link href="#details">View venue details <span>↗</span></a>
+        </div>
+      </section>
+
+      <section class="countdown-section">
+        <div class="countdown-overlay"></div>
+        <div class="countdown-content"><p class="eyebrow light">Until we say “I do”</p><h2>Counting the moments</h2><div class="countdown" aria-live="off">
+          <div><strong id="days">—</strong><span>days</span></div><b>:</b><div><strong id="hours">—</strong><span>hours</span></div><b>:</b><div><strong id="minutes">—</strong><span>minutes</span></div><b>:</b><div><strong id="seconds">—</strong><span>seconds</span></div>
+        </div><p class="countdown-note" data-detail="dateLong"></p></div>
+      </section>
+
+      <section class="schedule botanical-section">
+        <div class="vine vine-left" aria-hidden="true"></div><div class="vine vine-right" aria-hidden="true"></div>
+        <div class="section-inner"><p class="eyebrow">The day's unfolding</p><h2>Our little timeline</h2>
+          <div class="timeline" id="timeline"></div>
+        </div>
+      </section>
+
+      <section class="gallery-section">
+        <div class="section-inner"><p class="eyebrow">A few favorite moments</p><h2>Our story, in little frames</h2>
+          <div class="gallery" aria-label="Photo gallery">
+            <div class="photo photo-one"><span>the beginning</span></div><div class="photo photo-two"><span>and all the in-between</span></div><div class="photo photo-three"><span>forever sounds lovely</span></div>
+          </div>
+          <p class="gallery-note">Replace these artful placeholders with your own photographs when you're ready.</p>
+        </div>
+      </section>
+
+      <section class="rsvp-section botanical-section" id="rsvp">
+        <div class="vine vine-left" aria-hidden="true"></div><div class="vine vine-right" aria-hidden="true"></div>
+        <div class="section-inner rsvp-inner"><p class="eyebrow">We hope you can join us</p><h2>Kindly reply</h2>
+          <p class="rsvp-copy">Please let us know if you’ll be celebrating with us by <span data-detail="rsvpBy"></span>.</p>
+          <form id="rsvpForm" novalidate>
+            <label>Your name<input name="guest" autocomplete="name" required maxlength="80" placeholder="The name on your invitation" /></label>
+            <label>Will you be joining us?<select name="attendance" required><option value="">Please choose</option><option value="joyfully accepts">Joyfully accepts</option><option value="regretfully declines">Regretfully declines</option></select></label>
+            <label>Message for the couple <span class="optional">(optional)</span><textarea name="message" rows="3" maxlength="500" placeholder="A note, a song request, or a little love…"></textarea></label>
+            <button type="submit" class="submit-button">Send your reply <span>→</span></button>
+            <p class="form-note" id="formNote" role="status">This sample form is local only; connect a form service or backend to receive and store replies.</p>
+          </form>
+        </div>
+      </section>
+
+      <footer class="closing"><div class="flourish" aria-hidden="true">❧ <span>✦</span> ❧</div><h2>Can’t wait to celebrate<br /><em>with you.</em></h2><p><span data-detail="nameOne"></span> & <span data-detail="nameTwo"></span></p><a href="#home" class="back-top">Back to the beginning ↑</a></footer>
+    </main>
+
+    <div class="opening-scene" id="openingScene" aria-label="Wedding entrance">
+      <div class="scene-light"></div><div class="stage-glow"></div>
+      <div class="doorway-frame" aria-hidden="true"><div class="frame-inner"></div></div>
+      <div class="door-light" aria-hidden="true"><span class="light-source"></span><span class="light-shaft"></span><span class="light-floor"></span></div>
+      <div class="face-light" aria-hidden="true"><span class="flare-core"></span><span class="flare-rays"></span></div>
+      <button class="double-door" id="openDoor" type="button" aria-label="Open the wedding doors">
+        <span class="door-leaf door-left" aria-hidden="true">
+          <span class="door-inset"><span class="door-panel panel-top"><span class="door-engraving"></span></span><span class="door-panel panel-middle"><span class="door-engraving"></span></span><span class="door-panel panel-bottom"><span class="door-engraving"></span></span></span>
+          <span class="door-handle"><i></i><b></b></span>
+        </span>
+        <span class="door-leaf door-right" aria-hidden="true">
+          <span class="door-inset"><span class="door-panel panel-top"><span class="door-engraving"></span></span><span class="door-panel panel-middle"><span class="door-engraving"></span></span><span class="door-panel panel-bottom"><span class="door-engraving"></span></span></span>
+          <span class="door-handle"><i></i><b></b></span>
+        </span>
+        <span class="door-seam-mark" aria-hidden="true"><span data-detail="initialOne"></span><i>✦</i><span data-detail="initialTwo"></span></span>
+      </button>
+      <p class="scene-caption">A celebration awaits</p>
+      <p class="scene-hint" id="keyboardHint">Tap to enter <span>·</span> press enter or space</p>
+      <button class="skip-intro" id="skipIntro" type="button">Skip intro <span>→</span></button>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
